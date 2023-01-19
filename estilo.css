@@ -1,0 +1,384 @@
+ * {
+	font-family:  Product Sans;
+	scroll-behavior: smooth;
+	box-sizing: border-box;
+	margin: 0 0;
+	padding: 0 0;
+}
+
+body{
+	
+	font-size: 18px;
+}
+
+/*TÍTULOS*/
+h1{font-size: 3em;}
+h2{font-size: 2.5em;}
+h3{font-size: 1.5em;}
+ul{list-style: none;}
+
+/*PÁRRAFOS*/
+p{	
+	text-align: justify;
+}
+p::selection{
+	background-color: #009eff;
+}
+h2::selection, h3::selection{
+	background-color: #0976E5;
+}
+/*BOTONES*/
+button{
+	padding: 10px 20px;
+	background-color: #009eff;
+	border: 1px solid #000;
+	font-weight: bold;
+	border-radius: 10px;
+	color:#fff;
+}
+
+button:hover{
+	background-color: #0976E5;
+}
+
+
+/*CONTENEDORES*/
+.container{
+	max-width: 1800px;
+	margin: auto;
+}
+
+
+/*HEADER*/
+header{
+	background-color: #009eff;
+	color: #fff;
+}
+header .container{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+header .logo{
+	margin: 0;
+	color:#010774;
+	font-size: 1.2em;
+	padding: 20px 20px;
+	user-select: none;
+	font-weight: bold;
+}
+header nav{
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 10px;
+	list-style: none;
+}
+header li{
+	padding:5px 10px;
+}
+header li:hover{
+	color: #b1c5c8;
+}
+header li:hover > a{
+	color: #b1c5c8;
+}
+header a{
+	text-decoration: none;
+	color: #fff;
+	padding: 0 6px;
+	font-size: 16px;
+}
+
+/*SECTION HERO*/
+#hero{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	height: 90vh;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.7),
+			rgba(0,0,0,0.7)
+		)
+	,url("images/micromercado.jpg");
+	color: #fff;
+	background-size: cover;
+}
+#hero button{
+	font-size: 1.5em;
+}
+/*SECTION SOBRE NOSOTROS*/
+.color-tiendaSarita{
+	color:#010774;
+}
+
+#somos-tiendaSarita .container{
+	background-color:#CDCDCD;
+	padding: 35px;	
+}
+#somos-tiendaSarita h2{
+	text-align: center;
+	padding: 20px;
+}
+#somos-tiendaSarita h3{
+	padding-top: 15px;
+}
+iframe{
+	border-radius:10px;
+}
+
+/*SECTION CATEGORÍAS */
+#categorias{
+	background-color: #141414;
+	color:#fff;
+	text-align: center;
+}
+#categorias .container{
+	padding: 35px 10px;
+} 
+#categorias h2{
+	text-align: center;
+	padding: 20px;
+}
+#categorias .card{
+	margin: 10px;
+	padding: 20px 50px;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 15px;
+	border: 1px solid #333333;
+}
+.container-cards{
+	display: flex;
+	flex-direction: column;
+}
+.card:nth-child(1){
+	padding: 10px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.75),
+			rgba(0,0,0,0.75)
+		)
+	,url("images/lacteos.jpg");
+}
+.card:nth-child(2){
+	padding: 10px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.75),
+			rgba(0,0,0,0.75)
+		)
+	,url("images/carnicos.jpg");
+}
+.card:nth-child(3){
+	padding: 10px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.75),
+			rgba(0,0,0,0.75)
+		)
+	,url("images/pan.jpg");
+}
+.card:nth-child(4){
+	padding: 10px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.75),
+			rgba(0,0,0,0.75)
+		)
+	,url("images/papas.jpg");
+}
+.card:nth-child(5){
+	padding: 10px;
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.75),
+			rgba(0,0,0,0.75)
+		)
+	,url("images/aseo.jpg");
+}
+
+
+/*SECTION Certificados*/
+#certificados{
+	background-color:#CDCDCD;
+	padding: 10px;
+}
+.color-tick{
+	color:#0976E5;
+}
+
+#certificados .container{
+	padding: 35px;
+}
+#certificados .container-certificados{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+#certificados span, li{
+	padding: 4px 8px;
+}
+
+#certificados h2{
+	padding: 10px;
+}
+
+/*SECTION Compra Ya*/
+#compraYa{
+	background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.8),
+			rgba(0,0,0,0.8)
+		)
+	,url("images/verduras.jpg");
+	background-size: cover;
+	color: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	height: 80vh;
+}
+#compraYa h2{
+	font-size: 2.2em;
+}
+#compraYa button{
+	font-size: 1.5em;
+}
+
+/*FOOTER*/
+footer{
+	background-color:#CDCDCD;
+	font-size: 15px;
+	padding: 10px;
+
+}
+
+footer .container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@media screen and (min-width: 720px){
+	/*HEADER*/
+	header{
+		position: fixed;
+		width: 100%;
+	}
+	header .container{
+		flex-direction: row;
+		justify-content: space-between;
+		padding-right: 10px;
+	}
+
+	header nav{
+		padding: 10px;
+		flex-direction: row;
+		font-weight: bold;
+	}
+
+	#hero h1{
+		font-size: 4em;
+	}
+
+	/*SECTION Sobre Nosotros*/
+	#somos-tiendaSarita{
+
+	}
+	#somos-tiendaSarita .container{
+		padding: 65px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	#somos-tiendaSarita .img-container{
+		display: flex;
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.5),
+			rgba(0,0,0,0.5)
+		)
+	,url("images/morchis.jpg");
+	width: 400px;
+	height: 600px;
+	background-size: cover;
+	background-position: center center;
+	align-items: center;
+	border-radius: 8px;
+	}
+	#somos-tiendaSarita .texto{
+		width: 50%;
+		max-width: 600px;
+		padding-left: 20px;
+		display: flex;
+		flex-direction: column;
+	}
+	#somos-tiendaSarita h2{
+		padding: 5px;
+	}
+	#somos-tiendaSarita h3 {
+		margin-bottom:  10px;
+	}
+
+	/*SECTION Categorías*/
+	#categorias{
+		padding: 20px;
+	}
+	#categorias .container-cards{
+		display:grid;
+		grid-template-rows: repeat(auto-fill,minmax(1fr,1fr));
+		grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+		grid-gap: 3px;
+	}
+	#categorias .card{
+		padding: 20px 25px;	
+	}
+	#categorias h2{
+		padding: 20px;
+	}
+
+	/*SECTION Certificados*/
+	#certificados{
+		padding: 30px;
+	}
+	#certificados .container{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+	align-items: center;
+	}
+	#certificados .img-container{
+		display: flex;
+		background-image: linear-gradient(
+			0deg,
+			rgba(0,0,0,0.2),
+			rgba(0,0,0,0.2)
+		)
+	,url("images/certificado.jpg");
+	width: 200px;
+	height: 250px;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 8px;
+}
+	#certificados .container-certificados{
+		max-width: 600px;
+	}
+
+	/*SECTION Certificados*/
+	#compraYa h2{
+		font-size: 3.5em;
+	}
+
+	footer .container{
+		display: flex;
+		justify-content: flex-end;
+	}
+
+
+
